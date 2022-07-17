@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="/javascript/main.js"></script>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="shortcut icon" href="/images/favicon.ico"><link rel="icon" sizes="16x16 32x32 64x64" href="/images/favicon.ico"><link rel="icon" type="image/png" sizes="196x196" href="/images/favicon-192.png"><link rel="icon" type="image/png" sizes="160x160" href="/images/favicon-160.png"><link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png"><link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png"><link rel="apple-touch-icon" href="/images/favicon-57.png"><link rel="apple-touch-icon" sizes="114x114" href="/images/favicon-114.png"><link rel="apple-touch-icon" sizes="72x72" href="/images/favicon-72.png"><link rel="apple-touch-icon" sizes="144x144" href="/images/favicon-144.png"><link rel="apple-touch-icon" sizes="60x60" href="/images/favicon-60.png"><link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-120.png"><link rel="apple-touch-icon" sizes="76x76" href="/images/favicon-76.png"><link rel="apple-touch-icon" sizes="152x152" href="/images/favicon-152.png"><link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png"><meta name="msapplication-TileColor" content="#FFFFFF"><meta name="msapplication-TileImage" content="/images/favicon-144.png"><meta name="msapplication-config" content="/browserconfig.xml">
+    </head>
+    <body>
+        <div>
+            <iframe id="header" scrolling="no" height="100" width="100%" src="/other/header.html" frameborder="0"></iframe>
+        </div>
+        <div>
+            <iframe id="sidebar" frameborder="0" style="float: left;margin-top: 350;top: 350;margin-left: -10px;" scrolling="no" width="170" src="/other/sidebar.html" onload='sidebarLoaded()'></iframe>
+        </div>
+        <div id="main" class="main">
+            <div class="main_text">
+                <h3 id="title">Home</h3>
+                <iframe src="/other/saved-games-ui.html" id="savedgames" height="400" width="400" style="position:absolute;right:20px;" onload="savedGamesLoaded()" frameborder="0"></iframe>
+                <h1 id="h1">Welcome to Pringles!</h1>
+                <div style="width:800px;" id="firstdiv">
+                    <p id="splash" class="fancy"></p>
+	            <p> To be honest, I was planning on discontinuing this website because I simply am too lazy to keep updating it. But I guess I will put it back up. If there is anything you want added feel free to tell me in person or thruogh the form.
+
+                </div>
+                <br>
+                <img src="/images/pringles.jpeg">
+                <br>
+<script src="https://cdn.logwork.com/widget/countdown.js"></script>
+<a href="https://logwork.com/countdown-timer" class="countdown-timer" data-timezone="America/New_York" data-date="2022-06-02 06:35" data-digitscolor="#474cd1">Countdown until summer break</a>
+                <br>
+                <p>Gonna take my name off of the website so that I don't get into any kind of trouble at school so if you know who made it then you know. </p>
+                <br>
+                <div class="p_big">
+                    <p>Info and stuff:</p>
+                </div>
+                <div class="purple">
+                    <p class="noColorChange">The cool guy that did a lot of confusing things that I didn't understand is ellieeet123 so shoutout to him</p>
+                </div>
+                <div class="green">
+                    <p class="noColorChange">ATTENTION!! Due to some of the firewalls installed on the school wifi, most of the .io games won't work at school. You can play them at home if you want to.</p>
+                </div>
+                <div class="red">
+                    <p class="noColorChange">Sometimes some of the html5 games will get blocked. Usually they are unblocked after about half an hour. No idea why this happens, but I thought I'd let you know.</p>
+                </div>
+                <div class="blue">
+                    <p class="noColorChange">The total number of games on this site is <span id="infoSectionGameCount"></span>! Lots more to come soon.</p>
+                </div>
+                <br>
+                <h2 id="h2">FLASH IS BACK!</h2>
+                <p><small>well... kinda.</small></p>
+                <br>
+                <p>As probably everyone knows, abode discontinued their support for flash player in December 2020, and soon after the extension was removed from most major web browsers.
+            However, the other day I stumbled upon a fancy little thing called Ruffle, which is essentially an adobe flash emulator, allowing flash games to be played
+            without having to have the official adobe software installed. It is still majorly in development and at this point only supports ActionScript v1.0-2.0, which 
+            basically means that it can only run games made in 2007 or earlier, as ActionScript v3.0 (the one that most every other flash game made after that time was made in).
+            Ruffle says that they are planning to add support for 3.0 eventually, but it might be a few months until the very first beta release of that. I will keep you
+            all updated tho. For now, if anyone knows of any good games to add to the site that work in ActionScript 2.0, please leave them either on the feedback form below!</p>
+                
+                <br>
+                <div class="p_big">
+                    <p>Game of the Week</p>
+                </div>
+                
+                    <div id="games" style="display:block;">
+                        <a href="/games/" onclick="sidebarMain();" target="_parent" 
+                        data-title="Rage 3"
+                        data-text=""
+                        data-isflash="1"
+                        data-framesrc="rage-3.swf"
+                        data-framewidth="1100"
+                        data-frameheight="700"
+                        data-isbigfile="1"
+                        ></a>
+			    </p>- An awesome fighting type game with some extra features ;) (hence the rage part..)</p>
+                
+                <div class="p_big">
+                    <p>New Today!</p>
+                </div>
+                <div id="new">
+                    <div id="games" style="display:block;">
+                        <a href="/games/" onclick="sidebarMain();" target="_parent" 
+                        data-title="Zelda: A Link To The Past"
+                        data-text=""
+                        data-isflash="0"
+                        data-framesrc="https://t-rexrunner.github.io/GBA-Games/launcher.html#zelda_past"
+                        data-framewidth="1090"
+                        data-frameheight="613"
+                        data-isbigfile="0"
+                        ></a>
+                    </div>
+                    <p>New game every weekday! Sometimes more because there's not many right now. Check this part of the home page to see what's new</p>
+                    <br>
+                </div>
+                <div class="p_big">
+                    <p>Have a suggestion for something to be edited?</p>
+                </div>
+                <p>
+                    Submit it through the form, click <a href="/stuff/submit/">here</a>
+                    to access it.
+                </p>
+                <br>
+                <div class="p_big">
+                    <p>Credits:</p>
+                </div>
+                <div class="credits">
+                    <p>Created by #$%^#&*</p>
+                    <p>Games added by @#$%^&*</p>
+                    <p>Most of the games were found online by me</p>
+                    <p>Geeky computer stuff by $%@#^&</p>
+                    <p>none of the games are made by us. all games credit to their respective developers</p>
+                    <p>*Enjoy*</p>
+                </div>
+                <p>ps. dont ask why it's called pringles.</p>
+                <a href="/" onclick="popup(this.href);return false">Open page as Chrome App</a>
+                <br>
+                <div class="p_big">
+                    <p>Shoutout to you for actually reading the home page!</p>
+                </div>
+                <br>
+                <div class="pageviews">
+                    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=MBWyyOJK__hIuyV-aVkWkctLXDQhDxCXHKt2fOgZJgg&cl=ffffff&w=a"></script>
+                </div>
+                <br>
+            </div>
+        </div>
+        <script src="/javascript/bodyScript.js"></script>
+        <script>
+            let allATags = document.getElementsByTagName('a');
+            for (let f = 1; f < allATags.length; f++) {
+                let currentItem = allATags[f];
+                if (currentItem.hasAttribute('data-title')) {
+                    currentItem.innerHTML = currentItem.dataset.title;
+                    currentItem.onclick = function() {
+                        sidebarMain(currentItem);
+                    }
+                }
+            }
+	        document.getElementById('firstdiv').style.width = (document.getElementById('main').offsetWidth - 500)+'px';
+        </script>
+    </body>
+</html>
+<div id="bottomElement"></div>
